@@ -14,6 +14,14 @@ IERC20 private fundamenta;
 
 bytes32 public constant _ADMIN = keccak256("_ADMIN");
 
+struct Proposals {
+    address Originator;
+    bytes32 Website;
+    uint BlockHeightProposed;
+    uint AllocatedWeight;
+    bool Active;
+}
+
 //------Set Token Address----------
 
 function setAddress(IERC20 _token) public {
