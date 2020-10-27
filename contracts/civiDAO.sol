@@ -8,4 +8,8 @@ contract civiDAO is AccessControl {
 
 using SafeMath for uint256;
 
+//----------RBAC-------------------
+
+bytes32 public constant _ADMIN = keccak256("_ADMIN");
+
 }
