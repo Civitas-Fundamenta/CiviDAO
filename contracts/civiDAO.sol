@@ -33,7 +33,7 @@ contract civiDAO is AccessControl {
         fundamenta = _token;
     }
 
-    //-------DAO Fundtions--------------
+    //-------DAO Functions--------------
 
     function addProposal(bytes32 _website) public {
         uint propid = propID().add(1);
